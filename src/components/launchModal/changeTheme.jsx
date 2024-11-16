@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import Modal from '../Modal/index'
+import Modal from '../Modal/themes'
 function App({changeTheme, theme}) {
 
 

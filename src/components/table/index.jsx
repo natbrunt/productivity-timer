@@ -8,9 +8,9 @@ function index() {
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>To do</th>
+        <th>Notes</th>
+        <th>Time</th>
       </tr>
     </thead>
     <tbody>

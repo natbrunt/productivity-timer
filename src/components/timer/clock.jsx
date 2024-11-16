@@ -6,13 +6,13 @@ function clock({seconds, minutes}) {
 
   <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
     <span className="countdown font-mono text-5xl">
-      <span>{minutes}</span>
+      <span style={{"--value":`${minutes}`}}></span>
     </span>
     min
   </div>
   <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
     <span className="countdown font-mono text-5xl">
-      <span>{seconds}</span>
+      <span style={{"--value":`${seconds}`}}></span>
     </span>
     sec
   </div>
