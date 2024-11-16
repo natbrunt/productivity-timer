@@ -6,14 +6,14 @@ function App({changeTheme, theme}) {
 
 
   return (
-    <div className='w-100'>
+    <div className=''>
 
         
     <button 
-        className="btn btn-primary" 
+        className="btn" 
         onClick={()=>document.getElementById('my_modal_add').showModal()}
     >
-        Add to do
+      +
     </button>
 
       <Modal />

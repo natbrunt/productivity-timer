@@ -1,6 +1,6 @@
 import React from 'react'
-
-function index() {
+import AddTodo from '../launchModal/addTodo'
+function index({todos}) {
   return (
     <div className="overflow-x-auto">
   <table className="table">
@@ -14,27 +14,20 @@ function index() {
       </tr>
     </thead>
     <tbody>
-      {/* row 1 */}
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-      </tr>
-      {/* row 2 */}
-      <tr className="hover">
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
-      </tr>
-      {/* row 3 */}
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
+
+      { todos && todos.map((todo, index) => (
+        <tr key={index} className="hover">
+          <th>{index + 1}</th>
+          <td>{todo.todo}</td>
+          <td>{todo.notes}</td>
+          <td>{todo.time}</td>
+          <button className='btn btn-secondary'>finish</button>
+        </tr>
+       ))}
+
+
+        <AddTodo />
+
     </tbody>
   </table>
 </div>
