@@ -1,24 +1,14 @@
 import { useState } from 'react'
 
-import Modal from '../Modal/add'
+
 function App({changeTheme, theme}) {
 
 
 
   return (
-    <div className=''>
 
-        
-    <button 
-        className="btn" 
-        onClick={()=>document.getElementById('my_modal_add').showModal()}
-    >
-      +
-    </button>
+<div className='hover cursor-pointer text-center font-bold text-3xl w-full bg-pink-200' onClick={()=>document.getElementById('my_modal_add').showModal()}>+</div>
 
-      <Modal />
-
-    </div>
   )
 }
 

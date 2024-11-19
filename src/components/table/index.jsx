@@ -2,8 +2,9 @@ import React from 'react'
 import AddTodo from '../launchModal/addTodo'
 function index({todos}) {
   return (
-    <div className="overflow-x-auto">
-  <table className="table">
+    <div className="flex justify-center">
+      <div className="max-w-[1000px]">
+  <table className="table w-full">
     {/* head */}
     <thead>
       <tr>
@@ -21,15 +22,14 @@ function index({todos}) {
           <td>{todo.todo}</td>
           <td>{todo.notes}</td>
           <td>{todo.time}</td>
-          <button className='btn btn-secondary'>finish</button>
+
         </tr>
        ))}
 
-
-        <AddTodo />
-
     </tbody>
   </table>
+  <AddTodo />
+  </div>
 </div>
   )
 }

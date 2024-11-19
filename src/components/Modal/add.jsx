@@ -5,8 +5,19 @@ function index() {
 
 <dialog id="my_modal_add" className="modal">
     <div className="modal-box">
-        <h3 className="font-bold text-lg">Add to do</h3>
-        
+        <h1 className="custom-h1">Add</h1>
+        <input
+  type="text"
+  placeholder="To do"
+  className="input input-bordered input-primary w-full max-w-xs" />
+  <input
+  type="text"
+  placeholder="Note"
+  className="input input-bordered input-secondary w-full max-w-xs" />
+  <input
+  type="text"
+  placeholder="Time"
+  className="input input-bordered input-secondary w-full max-w-xs" />
     </div>
     <form method="dialog" className="modal-backdrop">
         <button>close</button>
